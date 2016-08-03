@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Windows 10</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='index/css/main.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='index/css/baron.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='index/css/animate.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='index/css/font-awesome.min.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename='index/js/jquery.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='index/js/scrollbars.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='index/js/main.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='index/js/wow.min.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='index/js/stylesheet.js') }}"></script>
+	</head>
+	<body>
+	<link rel="alternate stylesheet" title="0078d7" href="{{ url_for('static', filename='index/css/themes/0078d7.css') }}" media="screen">
+	<link rel="alternate stylesheet" title="ff8c00" href="{{ url_for('static', filename='index/css/themes/ff8c00.css') }}" media="screen">
+	<link rel="alternate stylesheet" title="ea005e" href="{{ url_for('static', filename='index/css/themes/ea005e.css') }}" media="screen">
+	<script type="text/javascript"> 
+		$(function(){
+			$.stylesheetInit();
+			$('.theme_switcher').on('click',function(e){
+				$.stylesheetSwitch(this.getAttribute('rel'));
+				return false;
+			});
+			$('.menu_switcher').on('click',function(e){
+				$('#menu_drawer').removeClass('wided wided2 wided3').addClass(this.getAttribute('rel'));
+			});
+		});
+</script>
+	<section id="display"></section>
+	<section id="taskbar">
+		<button type="button" id="menu"></button>
+		<div id="menu_drawer" class="wided wow fadeInUpLittle" data-wow-delay="0s">
+			<div class="menu_list">
+				<div class="user">
+					<img class="avatar" src="/static/index/css/img/default_avatar.png" alt="">
+					<p class="userName">RedBuld</p>
+				</div>
+			</div>
+			<div class="menu_scroller">
+				<div class="scrolled">
+					<div class="menu_column wow fadeInUpLittle" data-wow-delay="0s">
+						<div class="group wow fadeInUpLittle" data-wow-delay="0s">
+							<input type="search" class="groupName" value="Group"><button type="buton" class="groupButton">=</button>
+							<button class="menu_switcher" rel="wided">1 колонка</button><button class="menu_switcher" rel="wided2">2 колонки</button><button class="menu_switcher" rel="wided3">3 колонки</button>
+						</div>
+						<div class="group wow fadeInUpLittle" data-wow-delay="0s">
+							<input type="search" class="groupName" value="Group"><button type="buton" class="groupButton">=</button>
+							<button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button>
+						</div>
+					</div>
+					<div class="menu_column wow fadeInUpLittle" data-wow-delay="0s">
+						<div class="group wow fadeInUpLittle" data-wow-delay="0s">
+							<input type="search" class="groupName" value="Group"><button type="buton" class="groupButton">=</button>
+							<button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button>
+						</div>
+						<div class="group wow fadeInUpLittle" data-wow-delay="0s">
+							<input type="search" class="groupName" value="Group"><button type="buton" class="groupButton">=</button>
+							<button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button>
+						</div>
+					</div>
+					<div class="menu_column wow fadeInUpLittle" data-wow-delay="0s">
+						<div class="group wow fadeInUpLittle" data-wow-delay="0s">
+							<input type="search" class="groupName" value="Group"><button type="buton" class="groupButton">=</button>
+							<button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button>
+						</div>
+						<div class="group wow fadeInUpLittle" data-wow-delay="0s">
+							<input type="search" class="groupName" value="Group"><button type="buton" class="groupButton">=</button>
+							<button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button><button class="theme_switcher" rel="0078d7">Тема</button><button class="theme_switcher" rel="ff8c00">Тема</button><button class="theme_switcher" rel="ea005e">Тема</button>
+						</div>
+					</div>
+				</div>
+				<div class="scrollbar_track">
+					<div class="scrollbar_free">
+						<div class="scrollbar_bar scrollbar_bar_state_on" style="height: 0px; top: 0px;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="theme_colorize"></div>
+			<div class="theme_bg"></div>
+		</div>
+		<button type="button" id="date_n_time">
+			<p id="clock"></p>
+			<p id="date"></p>
+		</button>
+		<button type="button" id="hideall"></button>
+	</section>
+	</body>
+</html>

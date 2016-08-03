@@ -1,0 +1,25 @@
+color = #ea005e
+text_color = 'ea005e'
+#taskbar {
+	#menu:hover, #menu.open:hover{
+		background-image url('../img/start-'+text_color+'.png')
+	}
+	
+	#menu:active, #menu.open:active{
+		background-image url('../img/start-'+text_color+'-active.png')
+	}
+	
+	#menu_drawer .menu_column .groupName:focus, #menu_drawer .menu_column .groupName:active{
+		border 2px solid color
+	}
+	
+	#menu_drawer .menu_column .groupName:focus ~ .groupButton, #menu_drawer .menu_column .groupName:active ~ .groupButton {
+		background color
+		opacity 1
+	}
+	
+	#menu_drawer .menu_column .theme_switcher {
+		background color
+	}
+	
+}
